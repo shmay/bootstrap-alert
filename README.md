@@ -4,7 +4,7 @@ A [Polymer][1] version of Bootstrap's [alert thingy](http://getbootstrap.com/jav
 
 See the [component page](http://shmay.github.io/bs-alert) for more information.
 
-Polymer guide for reusable elements: http://www.polymer-project.org/docs/start/reusableelements.html
+Polymer guide for reusable elements [here](http://www.polymer-project.org/docs/start/reusableelements.html)
 
 To run locally:
 
