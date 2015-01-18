@@ -2,7 +2,7 @@ A [Polymer][1] version of Bootstrap's [alert thingy](http://getbootstrap.com/jav
 
 # bs-alert
 
-See the [component page](http://shmay.github.io/bs-alert) for more information.
+See the [component page](http://shmay.github.io/bootstrap-alert) for more information.
 
 Polymer guide for reusable elements [here](http://www.polymer-project.org/docs/start/reusableelements.html)
 
