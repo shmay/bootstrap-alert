@@ -31,8 +31,10 @@ module.exports = function(grunt) {
           inline: true,
           strip: true
         },
+
         files: {
-          'dist/index.html': 'demo.html'
+          'dist/index.html': 'index.html',
+          'dist/demo.html': 'demo.html'
         }
       }
     }
