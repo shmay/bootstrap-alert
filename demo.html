@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bs-alert Demo</title>
+    <script src="../webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="bs-alert.html">
+  </head>
+  <body unresolved>
+    <p>An `bs-alert` looks like this:</p>
+    <bs-alert type='danger' style='width:400px' onclick='yar()'>
+      crap crap crap
+    </bs-alert>
+
+    <a href='#' onclick='danger()'>Danger</a>
+    <a href='#' onclick='warning()'>Warning</a>
+    <a href='#' onclick='success()'>Success</a>
+    <a href='#' onclick='info()'>Info</a>
+
+    <script>
+      t = document.querySelector('bs-alert');
+
+      danger = function () {
+        t.type = 'danger';
+      }
+
+      warning = function () {
+        t.type= 'warning';
+      }
+
+      success = function () {
+        t.type= 'success';
+      }
+
+      info = function () {
+        t.type= 'info';
+      }
+
+    </script>
+  </body>
+</html>

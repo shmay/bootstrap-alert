@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bs-alert</title>
+
+  <script src="../../webcomponentsjs/webcomponents.js"></script>
+  <script src="../../web-component-tester/browser.js"></script>
+
+  <!-- Step 1: import the element to test -->
+  <link rel="import" href="../bs-alert.html">
+
+</head>
+<body>
+
+  <bs-alert id="fixture"></bs-alert>
+
+  <script>
+    var myEl = document.getElementById('fixture');
+
+    suite('<bs-alert>', function() {
+
+      test('defines the "author" property', function() {
+        assert.equal(myEl.author, 'Dimitri Glazkov');
+      });
+
+      test('says hello', function() {
+        assert.equal(myEl.sayHello(), 'bs-alert says, Hello World!');
+        var greetings = myEl.sayHello('greetings Earthlings');
+        assert.equal(greetings, 'bs-alert says, greetings Earthlings');
+      });
+
+      test('fires lasers', function(done) {
+        myEl.addEventListener('bs-alert-lasers-success', function(event) {
+          assert.equal(event.detail.sound, 'Pew pew pew!');
+          done();
+        });
+        myEl.fireLasers();
+      });
+
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Polymer component of <a href='http://getbootstrap.com/components/#alerts'> Bootstrap's alerts</a>
+
+##### Example
+
+    <bs-alert type='danger'>craaaap</bs-alert>
+
+@element bs-alert
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@homepage http://github.com/shmay/bs-alert
+-->
+<polymer-element name="bs-alert" attributes="type">
+  <template>
+    <link href="bs-alert.css" rel="stylesheet">
+    <button hidden?='{{!closeable}}' on-click='{{hide}}' type="button">×</button>
+    <content></content>
+  </template>
+
+  <script>
+    Polymer({
+      /**
+       * Set the type of alert you want: danger, warning, or success.
+       * @attribute type
+       * @type string
+       * @default ''
+       */
+
+      type: '',
+
+      /**
+       * Whether the alert can be closed by the user, via that X in the right corner
+       * @attribute closeable
+       * @type boolean
+       * @default true
+       */
+
+      closeable: true,
+
+      /**
+       * Set hidden to false to show an overlay and to true to hide it.
+       * A `bs-alert` may be made initially shown by setting its
+       * `hidden` attribute.
+       * @attribute hidden
+       * @type boolean
+       * @default true
+       */
+
+      hidden: true,
+
+      /** 
+      * Hide the overlay. This is equivalent to setting the `hidden`
+      * property to true.
+      * @method hide
+      */
+
+      hide: function(e,d,s) {
+        this.hidden = true
+      },
+
+      /** 
+      * Show the overlay. This is equivalent to setting the `hidden`
+      * property to false.
+      * @method show
+      */
+
+      show: function() {
+        this.hidden = false;
+      },
+
+      typeChanged: function() {
+        this.classList.remove('warning','success','danger','info');
+        this.classList.add(this.type);
+      }
+
+    });
+  </script>
+</polymer-element>
