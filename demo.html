@@ -9,34 +9,21 @@
   </head>
   <body unresolved>
     <p>An `bootstrap-alert` looks like this:</p>
-    <bootstrap-alert type='danger' style='width:400px' onclick='yar()'>
-      crap crap crap
+    <bootstrap-alert type='danger' style='width:400px'>
+      <b>crap crap crap</b>
     </bootstrap-alert>
 
-    <a href='#' onclick='danger()'>Danger</a>
-    <a href='#' onclick='warning()'>Warning</a>
-    <a href='#' onclick='success()'>Success</a>
-    <a href='#' onclick='info()'>Info</a>
+    <bootstrap-alert type='warning' style='width:400px'>
+      warning...
+    </bootstrap-alert>
 
-    <script>
-      t = document.querySelector('bootstrap-alert');
+    <bootstrap-alert type='info' style='width:400px'>
+      info
+    </bootstrap-alert>
 
-      danger = function () {
-        t.type = 'danger';
-      }
+    <bootstrap-alert type='success' style='width:400px'>
+      success!!!!!!!!!!!!!!!!!!!!
+    </bootstrap-alert>
 
-      warning = function () {
-        t.type= 'warning';
-      }
-
-      success = function () {
-        t.type= 'success';
-      }
-
-      info = function () {
-        t.type= 'info';
-      }
-
-    </script>
   </body>
 </html>
