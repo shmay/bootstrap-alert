@@ -5,16 +5,16 @@ Polymer component of <a href='http://getbootstrap.com/components/#alerts'> Boots
 
 ##### Example
 
-    <bs-alert type='danger'>craaaap</bs-alert>
+    <bootstrap-alert type='danger'>craaaap</bootstrap-alert>
 
-@element bs-alert
+@element bootstrap-alert
 @blurb Element providing solution to no problem in particular.
 @status alpha
-@homepage http://github.com/shmay/bs-alert
+@homepage http://github.com/shmay/bootstrap-alert
 -->
-<polymer-element name="bs-alert" attributes="type">
+<polymer-element name="bootstrap-alert" attributes="type">
   <template>
-    <link href="bs-alert.css" rel="stylesheet">
+    <link href="bootstrap-alert.css" rel="stylesheet">
     <button hidden?='{{!closeable}}' on-click='{{hide}}' type="button">×</button>
     <content></content>
   </template>
@@ -41,7 +41,7 @@ Polymer component of <a href='http://getbootstrap.com/components/#alerts'> Boots
 
       /**
        * Set hidden to false to show an overlay and to true to hide it.
-       * A `bs-alert` may be made initially shown by setting its
+       * A `bootstrap-alert` may be made initially shown by setting its
        * `hidden` attribute.
        * @attribute hidden
        * @type boolean

@@ -1,12 +1,12 @@
 {
-  "name": "bs-alert",
+  "name": "bootstrap-alert",
   "version": "0.0.0",
   "keywords": [
     "seed",
     "polymer",
     "web-components"
   ],
-  "main": "bs-alert.html",
+  "main": "bootstrap-alert.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^0.5.1",
     "bourbon": "thoughtbot/bourbon"
